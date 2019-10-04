@@ -36,6 +36,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.protractor.protractor_package" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -73,6 +74,11 @@
       <workItem from="1569239848220" duration="3918000" />
       <workItem from="1569506839488" duration="384000" />
       <workItem from="1569507253470" duration="1534000" />
+      <workItem from="1569846930694" duration="70000" />
+      <workItem from="1569849868625" duration="1941000" />
+      <workItem from="1570189582959" duration="28000" />
+      <workItem from="1570189704978" duration="5285000" />
+      <workItem from="1570195251619" duration="5158000" />
     </task>
     <servers />
   </component>
