@@ -46,7 +46,7 @@ function addtext() {
         }
 
 }
-
+// Remove a tag from other
 function Destroy() {
 
    Delete.classList.add("DEL");
