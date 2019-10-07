@@ -11,6 +11,8 @@ function init(){
     chbox1.addEventListener("click",addtext)
     chbox2.addEventListener("click",addtext)
     ex5.addEventListener("click",Destroy)
+    btn.addEventListener("click",initialsation);
+
 }
 
 //change the color and text decoration the first exercise 1
@@ -46,8 +48,20 @@ function addtext() {
         }
 
 }
-// Remove a tag from other
+// Remove a tag from anther IN HTML
 function Destroy() {
 
    Delete.classList.add("DEL");
+}
+
+// initialisation NAME/Last name
+function initialsation() {
+    var long = nm.value.length;
+    var espace= nm.indexOf(" ");
+    var lettre1=nm.substr(0.1);
+    var lettre2=nm.substr(espace+1,1);
+    var lettre3=nm.substr(long-1,1);
+    var resultat= lettre1+lettre2+lettre3;
+    initi.console.log(resultat);
+
 }
