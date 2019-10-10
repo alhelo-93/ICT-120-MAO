@@ -14,9 +14,12 @@ text-decoration: line-through;
     font-family: Arial;
 
 }
-.bigyes{
+.bigyes:after{
     background-color: lawngreen;
     color: azure;
+/* we can remove this and we got the same result */
+    content: "YES";
+    font-size: 200px;
 
 
 }
