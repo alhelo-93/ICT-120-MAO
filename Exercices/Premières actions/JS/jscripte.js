@@ -8,10 +8,10 @@ function init() {
     ex2.addEventListener("click", reform);
     ex3.addEventListener("mouseover", chfonttoarial);
     ex3.addEventListener("mouseleave", removefontarial);
-    chbox1.addEventListener("click", addtext)
-    chbox2.addEventListener("click", addtext)
-    ex5.addEventListener("click", Destroy)
-    btn.addEventListener("click", initialsation);
+    chbox1.addEventListener("click", addtext);
+    chbox2.addEventListener("click", addtext);
+    ex5.addEventListener("click", Destroy);
+    nm.addEventListener("keyup", initialsation);
 
 }
 
@@ -65,12 +65,34 @@ function Destroy() {
 
 // initialisation NAME/Last name
 function initialsation() {
+
+    //we meuser length of the name
     var long = nm.value.length;
-    var espace = nm.indexOf(" ");
-    var lettre1 = nm.substr(0.1);
-    var lettre2 = nm.substr(espace + 1, 1);
-    var lettre3 = nm.substr(long - 1, 1);
-    var resultat = lettre1 + lettre2 + lettre3;
-    initi.console.log(resultat);
+
+    //find where is the place exactly
+    var espace = nm.value.indexOf(" ");
+    // here is condition to make sure if there is space ?
+    if (espace === true) {
+        //now we go slowly to take first letter
+        var lettre1 = nm.value.substr(0., 1);
+        // find space between name and last name
+        var lettre2 = nm.value.substr(espace + 1, 1);
+        // take last letter
+        var lettre3 = nm.value.substr(long - 1, 1);
+        // concatenate together to make initialisation
+        var resultat = lettre1 + lettre2 + lettre3;
+        // all to upper case
+        var upcase = resultat.toUpperCase();
+        // put the value in the second box
+        initi.value = upcase;
+        //if not than take first and last letter
+    } else {
+        var lettre1 = nm.value.substr(0., 1);
+        var lettre3 = nm.value.substr(long - 1, 1);
+        var resultat = lettre1 + lettre3;
+        var upcase = resultat.toUpperCase();
+        initi.value = upcase;
+    }
+
 
 }

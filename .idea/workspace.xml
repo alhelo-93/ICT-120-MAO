@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="691ea662-95b9-4fff-942e-0ac6f8362e94" name="Default Changelist" comment="" />
+    <list default="true" id="691ea662-95b9-4fff-942e-0ac6f8362e94" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/Premières actions/JS/jscripte.js" beforeDir="false" afterPath="$PROJECT_DIR$/Exercices/Premières actions/JS/jscripte.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +30,9 @@
   <component name="ProjectId" id="1PxrzqG6iCThnTx73VAC8XRhC4m" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Premières actions" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -82,6 +87,8 @@
       <workItem from="1570451436362" duration="4836000" />
       <workItem from="1570710746062" duration="1374000" />
       <workItem from="1570712481501" duration="265000" />
+      <workItem from="1570738357116" duration="3943000" />
+      <workItem from="1570744511551" duration="3945000" />
     </task>
     <servers />
   </component>
@@ -96,6 +103,20 @@
             <State>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
