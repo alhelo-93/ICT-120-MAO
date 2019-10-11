@@ -13,6 +13,7 @@ function init() {
     ex5.addEventListener("click", Destroy)
     btn.addEventListener("click", initialsation);
 
+
 }
 
 //change the color and text decoration the first exercise 1
@@ -67,7 +68,7 @@ function Destroy() {
 function initialsation() {
     var long = nm.value.length;
     var espace = nm.indexOf(" ");
-    var lettre1 = nm.substr(0.1);
+    var lettre1 = nm.substr(0,1);
     var lettre2 = nm.substr(espace + 1, 1);
     var lettre3 = nm.substr(long - 1, 1);
     var resultat = lettre1 + lettre2 + lettre3;
