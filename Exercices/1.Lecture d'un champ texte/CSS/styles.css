@@ -1,0 +1,29 @@
+div {
+    padding : 5px;
+    margin: 5px;
+    border: solid 1px black;
+    width: fit-content;
+}
+/*Creat Class non using for JS and refer to ex1   */
+.chcolor{
+background-color: lightblue;
+text-decoration: line-through;
+}
+
+.chfont{
+    font-family: Arial;
+
+}
+.bigyes:after{
+    background-color: lawngreen;
+    color: azure;
+/* we can remove this and we got the same result */
+    content: "YES";
+    font-size: 200px;
+
+
+}
+.DEL{
+
+    display:none;
+}
