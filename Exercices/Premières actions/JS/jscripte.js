@@ -66,15 +66,15 @@ function Destroy() {
 
 // initialisation NAME/Last name
 function initialsation() {
-
+    var x=" ";
     //we meuser length of the name
     var long = nm.value.length;
 
 
     //find where is the place exactly
-    var espace = nm.value.indexOf(" ");
+    var espace = nm.value.indexOf(x);
     // here is condition to make sure if there is space ?
-    if (espace === true) {
+    if (espace === false) {
         //now we go slowly to take first letter
         var lettre1 = nm.value.substr(0., 1);
         // find space between name and last name
