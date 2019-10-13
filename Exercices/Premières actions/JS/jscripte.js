@@ -11,7 +11,7 @@ function init() {
     chbox1.addEventListener("click", addtext);
     chbox2.addEventListener("click", addtext);
     ex5.addEventListener("click", Destroy);
-    nm.addEventListener("keyup", initialsation);
+    nm.addEventListener("keyup", initialisation);
 
 
 }
@@ -65,37 +65,27 @@ function Destroy() {
 }
 
 // initialisation NAME/Last name
-function initialsation() {
-    var x=" ";
-    //we meuser length of the name
-    var long = nm.value.length;
+function initialisation() {
 
+    const x = " ";
 
-    //find where is the place exactly
-    var espace = nm.value.indexOf(x);
-    // here is condition to make sure if there is space ?
-    if (espace === false) {
-        //now we go slowly to take first letter
-        var lettre1 = nm.value.substr(0., 1);
-        // find space between name and last name
-        var lettre2 = nm.value.substr(espace + 1, 1);
-        // take last letter
-        var lettre3 = nm.value.substr(long - 1, 1);
-        // concatenate together to make initialisation
-        var resultat = lettre1 + lettre2 + lettre3;
-        // all to upper case
-        var upcase = resultat.toUpperCase();
-        // put the value in the second box
-        initi.value = upcase;
-        //if not than take first and last letter
+    const long = nm.value.length;                                       //we mauser length of the name
+    const space = nm.value.indexOf(x);                                  // search where the space exactly
+    const l1 = nm.value.substr(0, 1);                       //now we are going to to take first letter
+    const l2 = nm.value.substr(space + 1, 1);               // find space between name and last name
+    const l3 = nm.value.substr(long - 1, 1);              // take last letter
+    const res3l = l1 + l2 + l3;                                         // concatenate together to make initialisation
+    const res2l = l1 + l3;                                               // concatenate together to make initialisation
+    const upc3l = res3l.toUpperCase();                                  // all to upper case
+    const upc2l = res2l.toUpperCase();
+
+    if ( ) {
+        initial.value = upc3l;
+
     } else {
-        var lettre1 = nm.value.substr(0., 1);
-        var lettre3 = nm.value.substr(long - 1, 1);
-        var resultat = lettre1 + lettre3;
-        var upcase = resultat.toUpperCase();
-        initi.value = upcase;
+        initial.value = upc2l ;
+
     }
 
-
-
+    //
 }
