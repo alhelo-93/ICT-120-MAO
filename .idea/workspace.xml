@@ -43,7 +43,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -90,7 +90,9 @@
       <workItem from="1570712481501" duration="265000" />
       <workItem from="1570738357116" duration="3943000" />
       <workItem from="1570744511551" duration="4020000" />
-      <workItem from="1570968263697" duration="8013000" />
+      <workItem from="1570968263697" duration="8900000" />
+      <workItem from="1570986197179" duration="19877000" />
+      <workItem from="1571737613736" duration="14072000" />
     </task>
     <servers />
   </component>
