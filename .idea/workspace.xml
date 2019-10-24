@@ -3,8 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="691ea662-95b9-4fff-942e-0ac6f8362e94" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercices/Premières actions/JS/jscripte.js" beforeDir="false" afterPath="$PROJECT_DIR$/Exercices/Premières actions/JS/jscripte.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercices/Premières actions/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Exercices/Premières actions/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/1.Lecture d'un champ texte/CSS/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Exercices/1.Lecture d'un champ texte/CSS/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/1.Lecture d'un champ texte/JS/jscripte.js" beforeDir="false" afterPath="$PROJECT_DIR$/Exercices/1.Lecture d'un champ texte/JS/jscripte.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/1.Lecture d'un champ texte/PHOTOS/empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/1.Lecture d'un champ texte/PHOTOS/go.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/1.Lecture d'un champ texte/PHOTOS/marks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/1.Lecture d'un champ texte/PHOTOS/set.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/1.Lecture d'un champ texte/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Exercices/1.Lecture d'un champ texte/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/2.Soumission de formulaire/CSS/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Exercices/2.Soumission de formulaire/CSS/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/2.Soumission de formulaire/JS/jscripte.js" beforeDir="false" afterPath="$PROJECT_DIR$/Exercices/2.Soumission de formulaire/JS/jscripte.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/2.Soumission de formulaire/PHOTOS/empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/2.Soumission de formulaire/PHOTOS/go.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/2.Soumission de formulaire/PHOTOS/marks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/2.Soumission de formulaire/PHOTOS/set.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/2.Soumission de formulaire/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Exercices/2.Soumission de formulaire/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/3.Ecriture d'un champ texte/CSS/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Exercices/3.Ecriture d'un champ texte/CSS/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/3.Ecriture d'un champ texte/JS/jscripte.js" beforeDir="false" afterPath="$PROJECT_DIR$/Exercices/3.Ecriture d'un champ texte/JS/jscripte.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/3.Ecriture d'un champ texte/PHOTOS/empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/3.Ecriture d'un champ texte/PHOTOS/go.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/3.Ecriture d'un champ texte/PHOTOS/marks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/3.Ecriture d'un champ texte/PHOTOS/set.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercices/3.Ecriture d'un champ texte/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Exercices/3.Ecriture d'un champ texte/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +111,11 @@
       <workItem from="1570744511551" duration="4020000" />
       <workItem from="1570968263697" duration="8900000" />
       <workItem from="1570986197179" duration="19877000" />
-      <workItem from="1571737613736" duration="14072000" />
+      <workItem from="1571737613736" duration="14404000" />
+      <workItem from="1571844089033" duration="1397000" />
+      <workItem from="1571849073325" duration="3426000" />
+      <workItem from="1571856247091" duration="1997000" />
+      <workItem from="1571861369032" duration="11756000" />
     </task>
     <servers />
   </component>
