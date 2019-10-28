@@ -12,15 +12,22 @@ function init() {
     chbox1.addEventListener("click", addtext);
     chbox2.addEventListener("click", addtext);
     ex5.addEventListener("click", Destroy);
+<<<<<<< HEAD
     nm.addEventListener("keyup", initialsation);
     ex7.addEventListener("",steupbtn)
 
+=======
+    nm.addEventListener("keyup",initialisation);
+    addEventListener("load",marques);
+    btn1.addEventListener("click",action1);
+    btn2.addEventListener("click",action2);
+    btn3.addEventListener("click",action3);
+>>>>>>> 5b2c5b6e86ab64081c7eb4ad3e9dc81e21617fb3
 }
 
 //change the color and text decoration the first exercise 1
 function changecolor() {
     ex1.classList.add("chcolor");
-
 }
 
 //reform back the first exercise by removing the color and decoration
@@ -56,7 +63,6 @@ function addtext() {
         ex4.classList.remove("bigyes");
 
     }
-
 }
 
 // Remove a tag from anther IN HTML
@@ -66,6 +72,7 @@ function Destroy() {
 }
 
 // initialisation NAME/Last name
+<<<<<<< HEAD
 function initialsation() {
     var x = " ";
     //we meuser length of the name
@@ -116,3 +123,57 @@ function initialsation() {
  function steupbtn() {
      btn2.classList.add(setup);
  }
+=======
+function initialisation() {
+
+    const x = " ";
+    const l1 = nm.value.substr(0, 1);                                              //now we are going to to take first letter
+    const long = nm.value.length;                                                                //we mauser length of the name
+    const space = nm.value.indexOf(x);                                                           // search where the space exactly
+    const l2 = nm.value.substr(space + 1, 1);                                      // find space between name and last name
+    const l3 = nm.value.substr(long - 1, 1);                                       // take last letter
+    const res1 = l1 + l2 + l3;                                                                   // concatenate together to make initialisation
+    const upc1 = res1.toUpperCase();                                                             // concatenate together to make initialisation
+    initial.value = upc1;                                                                        // all to upper case
+
+ }
+// all action for buttons
+function marques() {
+    btn1.disabled = false;
+    btn2.disabled = true;
+    btn3.disabled = true;
+    btn3.style.display="none";
+}
+function action1() {
+    btn1.disabled = true;
+    btn2.disabled = false;
+    btn3.disabled = true;
+    btn3.style.display="inline";
+    img.src="PHOTOS/marks.png";
+}
+function action2() {
+    btn1.style.display="none";
+    btn1.disabled = true;
+    btn2.disabled = true;
+    btn3.disabled = false;
+    img.src="PHOTOS/set.png";
+}
+function action3() {
+    btn1.disabled = true;
+    btn1.style.display="none";
+    btn2.disabled = true;
+    btn2.style.display="none";
+    btn3.disabled = true;
+    img.src="PHOTOS/go.png";
+    setTimeout(restall, 3 * 1000);
+}
+// function to rest by default all the settings
+function restall() {
+    btn1.disabled = false;
+    btn2.disabled = true;
+    btn1.style.display="inline"
+    btn2.style.display="inline"
+    btn3.style.display="none"
+    img.src="PHOTOS/empty.png";
+}
+>>>>>>> 5b2c5b6e86ab64081c7eb4ad3e9dc81e21617fb3
