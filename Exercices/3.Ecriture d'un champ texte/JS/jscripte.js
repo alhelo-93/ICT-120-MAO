@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-    btn.addEventListener("onkeyup", form);
+    btn.addEventListener("click", form);
 }
 
-function form() {
+function form(event) {
+    event.preventDefault()
 
-        txt2.value = txt1.value ;
+    txt2.value = txt1.value;
+    txt1.value="";
 
 }
