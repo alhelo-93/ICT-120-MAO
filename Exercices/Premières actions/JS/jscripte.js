@@ -12,17 +12,17 @@ function init() {
     chbox1.addEventListener("click", addtext);
     chbox2.addEventListener("click", addtext);
     ex5.addEventListener("click", Destroy);
-<<<<<<< HEAD
+
     nm.addEventListener("keyup", initialsation);
     ex7.addEventListener("",steupbtn)
 
-=======
+
     nm.addEventListener("keyup",initialisation);
     addEventListener("load",marques);
     btn1.addEventListener("click",action1);
     btn2.addEventListener("click",action2);
     btn3.addEventListener("click",action3);
->>>>>>> 5b2c5b6e86ab64081c7eb4ad3e9dc81e21617fb3
+
 }
 
 //change the color and text decoration the first exercise 1
@@ -72,7 +72,7 @@ function Destroy() {
 }
 
 // initialisation NAME/Last name
-<<<<<<< HEAD
+
 function initialsation() {
     var x = " ";
     //we meuser length of the name
@@ -123,7 +123,7 @@ function initialsation() {
  function steupbtn() {
      btn2.classList.add(setup);
  }
-=======
+
 function initialisation() {
 
     const x = " ";
@@ -176,4 +176,4 @@ function restall() {
     btn3.style.display="none"
     img.src="PHOTOS/empty.png";
 }
->>>>>>> 5b2c5b6e86ab64081c7eb4ad3e9dc81e21617fb3
+
