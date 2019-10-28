@@ -3,6 +3,7 @@
 
 document.addEventListener("DOMContentLoaded", init);
 
+
 function init() {
     ex1.addEventListener("click", changecolor);
     ex2.addEventListener("click", reform);
@@ -12,7 +13,7 @@ function init() {
     chbox2.addEventListener("click", addtext);
     ex5.addEventListener("click", Destroy);
     nm.addEventListener("keyup", initialsation);
-
+    ex7.addEventListener("",steupbtn)
 
 }
 
@@ -66,17 +67,34 @@ function Destroy() {
 
 // initialisation NAME/Last name
 function initialsation() {
-    var x=" ";
+    var x = " ";
     //we meuser length of the name
+
     var long = nm.value.length;
-
-
     //find where is the place exactly
+
+
     var espace = nm.value.indexOf(x);
+    //now we go slowly to take first letter
+    var lettre1 = nm.value.substr(0, 1);
+    // find space between name and last name
+    var lettre2 = nm.value.substr(espace + 1, 1);
+    // take last letter
+    var lettre3 = nm.value.substr(long - 1, 1);
+    // concatenate together to make initialisation
+    var resultat = lettre1 + lettre2 + lettre3;
+    // all to upper case
+    var upcase = resultat.toUpperCase();
+    // put the value in the second box
+    initi.value = upcase;
+
+
+    //if not than take first and last letter
     // here is condition to make sure if there is space ?
-    if (espace === false) {
+    /*
+    if ( espace == x ) {
         //now we go slowly to take first letter
-        var lettre1 = nm.value.substr(0., 1);
+        var lettre1 = nm.value.substr(0, 1);
         // find space between name and last name
         var lettre2 = nm.value.substr(espace + 1, 1);
         // take last letter
@@ -85,17 +103,16 @@ function initialsation() {
         var resultat = lettre1 + lettre2 + lettre3;
         // all to upper case
         var upcase = resultat.toUpperCase();
-        // put the value in the second box
+        // put the value in the second Text box
         initi.value = upcase;
         //if not than take first and last letter
     } else {
-        var lettre1 = nm.value.substr(0., 1);
-        var lettre3 = nm.value.substr(long - 1, 1);
-        var resultat = lettre1 + lettre3;
-        var upcase = resultat.toUpperCase();
-        initi.value = upcase;
+
     }
-
-
+ */
 
 }
+
+ function steupbtn() {
+     btn2.classList.add(setup);
+ }
