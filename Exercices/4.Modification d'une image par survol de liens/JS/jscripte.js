@@ -1,13 +1,15 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-    btn.addEventListener("click", form);
+    id.addEventListener("mouseover", changphoto);
 }
 
-function form(event) {
-    event.preventDefault()
+function changphoto() {
+if (id="plan"){
+    img.src="PHOTOS/Airplane.png"
+}else if(id="bike"){
+    img.src="PHOTO/Bike.png"
 
-    txt2.value = txt1.value;
-    txt1.value="";
+}else{}
 
 }
