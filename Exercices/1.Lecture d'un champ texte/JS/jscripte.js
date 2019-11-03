@@ -5,6 +5,6 @@ function init() {
 }
 
 function form() {
-
-    alert(test.value)
+    var  text= txt.value
+    alert(text)
 }
