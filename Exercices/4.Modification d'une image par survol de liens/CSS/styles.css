@@ -15,3 +15,14 @@ body {
     text-align: center;
 
 }
+a{
+<<<<<<< HEAD
+    color: white;
+
+
+
+=======
+    color: azure;
+    text-decoration: none;
+>>>>>>> 15b29805b2587e1aa77adaf0ac65450f958a2cb7
+}

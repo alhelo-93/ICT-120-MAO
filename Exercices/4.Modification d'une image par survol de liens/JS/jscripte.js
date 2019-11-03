@@ -1,15 +1,34 @@
+
+
+
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-    id.addEventListener("mouseover", changphoto);
+ a1.addEventListener("mouseover", imgchang);
 }
 
-function changphoto() {
-if (id="plan"){
-    img.src="PHOTOS/Airplane.png"
-}else if(id="bike"){
-    img.src="PHOTO/Bike.png"
+function imgchang() {
+    switch (form1) {
+        case "a1":
+            img.src = "PHOTOS/Airplane.png";
+            break;
+        case "a2":
 
-}else{}
+            break;
+        case "a3":
 
+            break;
+        case "a4":
+
+            break;
+        case "a5":
+
+            break;
+        case "a6":
+
+            break;
+        case "a7":
+
+            break;
+    }
 }
