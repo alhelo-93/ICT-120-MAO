@@ -1,3 +1,8 @@
+// marwan alhelo
+//site de voyage
+//03.11.19
+
+
 document.addEventListener("DOMContentLoaded", init);
 
 
@@ -17,10 +22,12 @@ function validateForm() {
         return false;
     }
 }
+// cadre de la photo
 function rest() {
     img.src="http://placehold.it/180 ";
 }
 
+// faire initiale
 function niniti(){
     var x = " ";
     //we meuser length of the name
@@ -44,9 +51,6 @@ function niniti(){
 }
 
 
-function save() {
-    
-}
 
 
 
@@ -55,7 +59,7 @@ function save() {
 
 
 
-
+// por téléchager la photo
 
 function readURL(input) {
     if (input.files && input.files[0]) {
