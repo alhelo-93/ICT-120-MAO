@@ -133,3 +133,15 @@ nav ul li a {
       height: 32px;
       background:none;
 }
+.help {
+      width:65px;
+      height:65px;
+      float: right;
+      background:#000;
+      font:bold 13px Arial;
+      border-radius:50%;
+      border:none;
+      color:#fff;
+
+
+}
