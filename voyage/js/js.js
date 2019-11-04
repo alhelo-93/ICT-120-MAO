@@ -1,6 +1,18 @@
 // MArwan alhelo
 // site de voayge
 // 03.11.19
+document.addEventListener("DOMContentLoaded", init);
+
+function init() {
+    btp.addEventListener("click",cache);
+}
+function cache(){
+    table.classList.remove("tab");
+}
+
+
+
+
 
 
 

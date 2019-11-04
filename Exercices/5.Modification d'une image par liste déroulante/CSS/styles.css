@@ -1,29 +1,21 @@
-div {
-    padding : 5px;
+div.from {
+    background-color: darkgrey;
+    padding: 5px;
     margin: 5px;
     border: solid 1px black;
     width: fit-content;
-}
-/*Creat Class non using for JS and refer to ex1   */
-.chcolor{
-background-color: lightblue;
-text-decoration: line-through;
+    display: inline-block;
 }
 
-.chfont{
-    font-family: Arial;
+
+body {
+    background-color: #484848;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 
 }
-.bigyes:after{
-    background-color: lawngreen;
+a{
     color: azure;
-/* we can remove this and we got the same result */
-    content: "YES";
-    font-size: 200px;
-
-
-}
-.DEL{
-
-    display:none;
+    text-decoration: none;
 }

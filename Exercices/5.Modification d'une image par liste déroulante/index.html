@@ -1,81 +1,31 @@
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Premiers pas en js</title>
+    <title>1. Lecture d'un champ text</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css"/>
-    <script src="JS/jscripte.js"> </script>
+    <script src="JS/js.js"></script>
 </head>
 <body>
-<h2>1. Ajouter/enlever du CSS</h2>
-<div id="ex1">Cette div doit avoir un fond bleu et son texte 'tracé' après qu'on lui aie cliqué dessus</div>
-<h2>2. Ajouter/enlever du CSS</h2>
-<div id="ex2">La div ci-dessus redevient normale quand on clique sur ce texte</div>
-<h2>3. Gérer les événements</h2>
-<div id="ex3">Ce texte doit être en police Arial quand la souris le survole</div>
-<h2>4. Détruire / Ajouter des éléments</h2>
-<div id="ex4">
-    Cette div devient un gros 'YES' en blanc sur fond vert quand les deux checkboxes dessous sont cochées.<br>
-    <input id="chbox1" type="checkbox" ><input id="chbox2" type="checkbox" >
-</div>
 
-<h2>5. Détruire / Ajouter des éléments</h2>
-<div id="ex5">
-    <span >Quand on clique sur ce texte, ça détruit</span>
-    <div id="Delete">cette div</div>
-</div>
-<h2>6. Gérer la valeur d'un élément du DOM</h2>
-<div>
-    Quand l'utilisateur tape son nom, le champ initiales se remplit automatiquement
-    <form>
-        Nom: <input id="nm" name="txtName" type="text"><br>
-        Initiales: <input  id="initi" name="txtInitials" type="text"><br>
-        <input id="btn" type="submit" value="Ok">
-    </form>
-</div>
-<h2>7. Modifier des attributs d'éléments, Utiliser un timer, Cacher/Montrer un élément</h2>
-<div>
-    Gérez la séquence de départ:
-    <ul>
-        <li>Le bouton 'A vos marques' est actif, le bouton 'Prêt' est désactivé, le bouton 'Partez' est invisible</li>
-        <li>Clic sur 'A vos marques'
-            <ul>
-                <li>Le bouton 'A vos marques' est désactivé</li>
-                <li>Le bouton 'Prêt' est actif</li>
-                <li>Le bouton 'Partez' est désactivé</li>
-                <li>L'image est 'marks.png</li>
-            </ul>
-        </li>
-        <li>Clic sur 'Prêt'
-            <ul>
-                <li>Le bouton 'A vos marques' est invisible</li>
-                <li>Le bouton 'Prêt' est désactivé</li>
-                <li>Le bouton 'Partez' est actif</li>
-                <li>L'image est 'set.png</li>
-            </ul>
-        </li>
-        <li>Clic sur 'Partez'
-            <ul>
-                <li>Le bouton 'A vos marques' est invisible</li>
-                <li>Le bouton 'Prêt' est invisible</li>
-                <li>Le bouton 'Partez' est désactivé</li>
-                <li>L'image est 'go.png</li>
-                <li>Après 3 secondes:
-                    <ul>
-                        <li>L'image revient à 'empty.png'</li>
-                        <li>Le bouton 'A vos marques' est actif</li>
-                        <li>Le bouton 'Prêt' est désactivé</li>
-                        <li>Le bouton 'Partez' est invisible</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <button id="btn1">A vos marques</button>
-    <button id="btn2">Prêt</button>
-    <button id="btn3">Partez</button><br>
-    <img src="PHOTOS/empty.png">
-</div>
+<img  id ="img" src="">
+<form>
+    <label for="pet-select">Choose a pet:</label>
+
+    <select name="pets" id="pet-select">
+        <option value="">--Please choose an option--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+    </select>
+
+
+
+</form>
+
 </body>
-
 </html>
