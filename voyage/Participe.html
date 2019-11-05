@@ -47,11 +47,11 @@
         <h1>Participants</h1>
         <br>
 
-        <button id="btp" type="button" class="btn-outline-dark btn-lg"> Add USER <img id="logo"
+        <button id="btp" type="button" class="btn-outline-dark btn-sm"> Add USER <img id="logo"
                                                                                       src="icon/create-group-button.png">
         </button>
-        <button type="button" class="btn-outline-dark btn-lg"> Delete USER <img id="Dlogo" src="icon/user.png"></button>
-        <button type="button" class="btn-outline-dark btn-lg">Update USER <img id="Uplogo" src="icon/refresh.png">
+        <button type="button" class="btn-outline-dark btn-sm"> Delete USER <img id="Dlogo" src="icon/user.png"></button>
+        <button id="btd" type="button" class="btn-outline-dark btn-sm">Update USER <img id="Uplogo" src="icon/refresh.png">
         </button>
         <br>
         <br>
@@ -60,38 +60,43 @@
                 <thead>
                 <tr>
                     <th scope="col">N°</th>
-                    <th scope="col">Nom</th>
+                    <th scope="col">Nom Et prénom</th>
                     <th scope="col">Age</th>
                     <th scope="col">Classe</th>
                     <th scope="col">Gender</th>
                     <th scope="col">N°téléphone</th>
                     <th scope="col">Adress</th>
                     <th scope="col">Nationalité</th>
-                    <th scope="col">role</th>
-                    <th scope="col">initiale</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Initiale</th>
 
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td><input type="text" id="txtNum"></td>
-                    <td><input type="text" id="txtNum"></td>
-                    <td><input type="text" id="txtNum"></td>
-                    <td><input type="text" id="txtNum"></td>
-                    <td><input type="text" id="txtNum"></td>
-                    <td><input type="text" id="txtNum"></td>
-                    <td> <input type="text" id="txtNum"></td>
-                    <td> <input type="text" id="txtNum"></td>
-                    <td> <input type="text" id="txtNum"></td>
+
+                    <th scope="row"><input type="text" id="txtNum0" placeholder="numéro"></th>
+                    <td><input type="text" id="txtNum1" placeholder="votre nom complet"></td>
+                    <td><input type="text" id="txtNum2" placeholder="votre age "></td>
+                    <td><input type="text" id="txtNum3" placeholder="votre Gender"></td>
+                    <td><input type="text" id="txtNum4" placeholder="votre Classe"></td>
+                    <td><input type="text" id="txtNum5" placeholder="votre téléphone"></td>
+                    <td><input type="text" id="txtNum6" placeholder="votre adress"></td>
+                    <td><input type="text" id="txtNum7" placeholder="votre nationalité"></td>
+                    <td><input type="text" id="txtNum8"  placeholder="votre role"></td>
+                    <td><input type="text" id="txtNum9" placeholder="votre initial"></td>
+                    <td><INPUT id="txtNum10" type="checkbox" name="chk"/></td>
 
                 </tr>
                 </tbody>
             </table>
             <div class="btn btn-success" id="cmdSave">Sauver</div>
-            </div>
+            <div class="btn btn-success" id="cmdback">retour</div>
+        </div>
+
+    </div>
         <br>
-        <table class="table table-striped table-dark ">
+        <table class=" table table-hover table-dark ">
             <thead>
             <tr>
                 <th scope="col">N°</th>
@@ -104,6 +109,7 @@
                 <th scope="col">Nationalité</th>
                 <th scope="col">role</th>
                 <th scope="col">initiale</th>
+                <th scope="col">Suprimer</th>
 
             </tr>
             </thead>
@@ -119,6 +125,7 @@
                 <td> SWI</td>
                 <td> boss</td>
                 <td> LBD</td>
+
 
             </tr>
             <tr>

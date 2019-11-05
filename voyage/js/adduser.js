@@ -59,7 +59,7 @@ function niniti(){
 
 
 
-// por téléchager la photo
+// pour téléchager la photo
 
 function readURL(input) {
     if (input.files && input.files[0]) {

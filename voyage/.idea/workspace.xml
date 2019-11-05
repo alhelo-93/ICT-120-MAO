@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2bfbecc-1c5a-4873-a78d-21ced34eb8e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contact/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Participe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Participe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/adduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/adduser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/js.js" afterDir="false" />
     </list>
@@ -24,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -84,6 +86,7 @@
       <workItem from="1572814491121" duration="1734000" />
       <workItem from="1572852460615" duration="146000" />
       <workItem from="1572872430650" duration="7679000" />
+      <workItem from="1572889728873" duration="14649000" />
     </task>
     <servers />
   </component>
