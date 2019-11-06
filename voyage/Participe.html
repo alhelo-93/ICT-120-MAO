@@ -12,6 +12,7 @@
     <!-- mon bootstrap cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
@@ -50,8 +51,8 @@
         <button id="btp" type="button" class="btn-outline-dark btn-sm"> Add USER <img id="logo"
                                                                                       src="icon/create-group-button.png">
         </button>
-        <button type="button" class="btn-outline-dark btn-sm"> Delete USER <img id="Dlogo" src="icon/user.png"></button>
-        <button id="btd" type="button" class="btn-outline-dark btn-sm">Update USER <img id="Uplogo" src="icon/refresh.png">
+        <button id="del"    type="button" class="btn-outline-dark btn-sm"> Delete USER <img id="Dlogo" src="icon/user.png"></button>
+        <button id="btu" type="button" class="btn-outline-dark btn-sm">Update USER <img id="Uplogo" src="icon/refresh.png">
         </button>
         <br>
         <br>
@@ -75,8 +76,8 @@
                 <tbody>
                 <tr>
 
-                    <th scope="row"><input type="text" id="txtNum0" placeholder="numéro"></th>
-                    <td><input type="text" id="txtNum1" placeholder="votre nom complet"></td>
+                    <th scope="row"><input  type="number" id="txtNum0" placeholder="numéro" min="0"></th>
+                    <td><input type="text" id="txtNum1" placeholder="votre nom complet" ></td>
                     <td><input type="text" id="txtNum2" placeholder="votre age "></td>
                     <td><input type="text" id="txtNum3" placeholder="votre Gender"></td>
                     <td><input type="text" id="txtNum4" placeholder="votre Classe"></td>
@@ -96,7 +97,7 @@
 
     </div>
         <br>
-        <table class=" table table-hover table-dark ">
+        <table class=" table table-hover table-bordered table-dark " id="mytable">
             <thead>
             <tr>
                 <th scope="col">N°</th>
@@ -109,14 +110,14 @@
                 <th scope="col">Nationalité</th>
                 <th scope="col">role</th>
                 <th scope="col">initiale</th>
-                <th scope="col">Suprimer</th>
+
 
             </tr>
             </thead>
-            <tbody id="tblBody">
-            <tr>
+            <tbody id="tblBody" class="clickable ">
+            <tr >
                 <th scope="row">1</th>
-                <td>Larry Bird</td>
+                <td class="clickable " id ="trtr">Larry Bird</td>
                 <td>26</td>
                 <td> b</td>
                 <td>m</td>

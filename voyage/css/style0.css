@@ -146,5 +146,15 @@ nav ul li a {
 
 }
 .tab{
-      display:none;
+       display:none;
+ }
+.clickable {
+      cursor: pointer;
+}
+input:invalid {
+      border: 2px solid red;
+}
+
+input:valid {
+      border: 1px solid green;
 }

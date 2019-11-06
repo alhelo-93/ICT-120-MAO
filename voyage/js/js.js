@@ -4,20 +4,22 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-    btp.addEventListener("click",cache);
-    cmdSave.addEventListener("click",adduser);
-    cmdback.addEventListener("click",montre);
-    btd.addEventListener("click",addchb);
+    btp.addEventListener("click", cache);
+    cmdSave.addEventListener("click", adduser);
+    cmdback.addEventListener("click", montre);
+    del.addEventListener("click",myDelete)
 }
-function cache(){
+
+function cache() {
     table.classList.remove("tab");
 }
-function montre(){
+
+function montre() {
     table.classList.add("tab");
 }
 
 
-function adduser(){
+function adduser() {
     tr = document.createElement('tr')
 
     th = document.createElement('th')
@@ -31,13 +33,14 @@ function adduser(){
     td8 = document.createElement('td')
     td9 = document.createElement('td')
     td10 = document.createElement('td')
-    td11 = document.createElement('input')
+
+    var checkbox = document.createElement('input')
+    td10 = checkbox
 
     checkbox.type = "checkbox";
-    checkbox.name = "name";
-    checkbox.value = "value";
-    checkbox.id = "id";
-
+    checkbox.value = "";
+    checkbox.id = "chbx";
+    checkbox.name = "todo[]";
 
     th.innerText = txtNum0.value;
     td1.innerText = txtNum1.value;
@@ -49,6 +52,7 @@ function adduser(){
     td7.innerText = txtNum7.value;
     td8.innerText = txtNum8.value;
     td9.innerText = txtNum9.value;
+    td10.innerText = td10
 
 
     tr.appendChild(th)
@@ -61,44 +65,48 @@ function adduser(){
     tr.appendChild(td7)
     tr.appendChild(td8)
     tr.appendChild(td9)
-    tr.appendChild(td10)
-    txtNum10.appendChild(checkbox)
+    tr.appendChild(checkbox)
 
     tblBody.appendChild(tr)
     alert("votre mwssage est bien ajouté ")
 }
-function addchb(){
 
-    txtNum10.classList.remove("tab")
+function validation() {
+
+   if(txtNum0.value <=0 ) {
+       alert('non')
+       cmdSave.disable= true;
+
+   }
 
 
 }
 
 
+function myDelete() {
+        if(chbx.checked == true){
+            tr.classList.add("tab")
+
+        }
 
 
 
-
-
-
-
+}
 
 
 // nav bar
-$(document).ready(function() {
-    $(".menu-icon").on("click", function() {
+$(document).ready(function () {
+    $(".menu-icon").on("click", function () {
         $("nav ul").toggleClass("showing");
     });
 });
 
 // Scrolling Effect
 
-$(window).on("scroll", function() {
-    if($(window).scrollTop()) {
+$(window).on("scroll", function () {
+    if ($(window).scrollTop()) {
         $('nav').addClass('black');
-    }
-
-    else {
+    } else {
         $('nav').removeClass('black');
     }
 })
