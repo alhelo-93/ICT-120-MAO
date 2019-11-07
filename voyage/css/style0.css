@@ -156,6 +156,7 @@ padding-right: 8px;
       border-radius:50%;
       border:none;
       color:#fff;
+      margin-right: 20px;
 
 
 }
@@ -174,4 +175,23 @@ input:invalid {
 
 input:valid {
       border: 1px solid green;
+}
+#tableadd{
+   margin-right: 15px;
+   margin-left: 10px;
+}
+#tablefix{
+      margin-right: 15px;
+      margin-left: 15px;
+
+}
+#btnpostion{
+
+      margin-right: 15px;
+      margin-left: 15px;
+}
+#btnedit{
+
+      margin-right: 15px;
+      margin-left: 15px;
 }

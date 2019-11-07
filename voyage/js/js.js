@@ -79,14 +79,8 @@ function adduser() {
     td8 = document.createElement('td')
     td9 = document.createElement('td')
     td10 = document.createElement('td')
+    div= document.createElement('div')
 
-    var checkbox = document.createElement('input')
-    td10 = checkbox
-
-    checkbox.type = "button";
-    checkbox.value = "";
-    checkbox.id = "chbx";
-    checkbox.name = "todo[]";
 
     th.innerText = txtNum0.value;
     td1.innerText = txtNum1.value;
@@ -98,7 +92,10 @@ function adduser() {
     td7.innerText = txtNum7.value;
     td8.innerText = txtNum8.value;
     td9.innerText = txtNum9.value;
-    td10.innerText = td10
+    div.innerText = "Supprimer";
+    div.className = "btn btn-danger"
+    div.addEventListener("click",killLine)
+
 
 
     tr.appendChild(th)
@@ -111,7 +108,8 @@ function adduser() {
     tr.appendChild(td7)
     tr.appendChild(td8)
     tr.appendChild(td9)
-    tr.appendChild(checkbox)
+    tr.appendChild(td10)
+    td10.appendChild(div)
 
     tblBody.appendChild(tr)
     alert("votre utlisateur est bien ajouté ")
@@ -205,7 +203,7 @@ function initiale(){
 
 function valitation () {
     var chmp1= txtNum1.value.length
-    if(chmp1==0){
+    if(chmp1== 0){
 
         txtNum1.classList.add("alert-danger")
 
