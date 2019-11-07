@@ -25,6 +25,9 @@ function init() {
 
 // initiale
     txtNum1.addEventListener("keyup",initiale);
+    cmdSave.addEventListener("click",valitation )
+
+
 
 }
 
@@ -163,7 +166,6 @@ function validation() {
 
 
 
-
 // Cette fonction est appelée au click sur un élément
 
 function killLine(event) // Le paramètre event représente l'événement qui a causé l'appel à la fonction
@@ -197,4 +199,16 @@ function initiale(){
     var upcase = resultat.toUpperCase();
     // put the value in the second box
     txtNum9.value = upcase;
+}
+
+// validation les champs
+
+function valitation () {
+    var chmp1= txtNum1.value.length
+    if(chmp1==0){
+
+        txtNum1.classList.add("alert-danger")
+
+    }
+
 }
