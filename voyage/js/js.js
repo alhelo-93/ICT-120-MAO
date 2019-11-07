@@ -12,13 +12,16 @@ function init() {
     addEventListener("load",cache);
     cmdSave.addEventListener("click", adduser);
     cmdback.addEventListener("click", cache);
-    del.addEventListener("click", myDelete)
+
 // bouton por edite
     updatebtn.addEventListener("click", btnedit)
     cmdedit.addEventListener("click", edite)
     cmdrest.addEventListener("click", retour)
 // bouton de sauvtage
     cmdstor.addEventListener("click",cmdstore)
+
+// delete
+    cmddel.addEventListener('click', killLine)
 
 }
 
@@ -28,13 +31,13 @@ function affichetable(){
 }
 function  montre () {
 
-    del.disabled= true
+    cmddel.disabled= true
     updatebtn.disabled= true
 }
 
 function cache() {
     tableadd.classList.add("tab");
-    del.disabled= false
+    cmddel.disabled= false
     updatebtn.disabled= false
 
 }
@@ -74,7 +77,7 @@ function adduser() {
     var checkbox = document.createElement('input')
     td10 = checkbox
 
-    checkbox.type = "checkbox";
+    checkbox.type = "button";
     checkbox.value = "";
     checkbox.id = "chbx";
     checkbox.name = "todo[]";
@@ -156,12 +159,16 @@ function validation() {
 }
 
 
-function myDelete() {
-    if (chbx.checked == true) {
-        tr.classList.add("tab")
 
-    }
 
+// Cette fonction est appelée au click sur un élément
+
+function killLine(event) // Le paramètre event représente l'événement qui a causé l'appel à la fonction
+{
+    input= event.target   // La cible ('target') de l'événement est le bouton (un élément du DOM)
+    td = input.parentNode  // td est la cellule dans laquelle le bouton se trouve
+    tr = td.parentNode      // tr est la ligne ('row') dans laquelle la cellule se trouve
+    table = tr.parentNode   // table est la table dans laquelle la ligne se trouve
+    table.removeChild(tr)   // On enlève la ligne de la table
 }
-
 
