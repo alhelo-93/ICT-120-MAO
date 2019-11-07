@@ -202,7 +202,8 @@
                 ['Welcome', latitude, longitude, 2]
             ];
 
-            
+            if (selector_map !== undefined) {
+
             }
 
             var infowindow = new google.maps.InfoWindow();
