@@ -202,20 +202,7 @@
                 ['Welcome', latitude, longitude, 2]
             ];
 
-            if (selector_map !== undefined) {
-                var map = new google.maps.Map(document.getElementById('google_map'), {
-                    zoom: 13,
-                    scrollwheel: false,
-                    zoomControl: false,  
-                    disableDoubleClickZoom: true,
-                    navigationControl: true,
-                    mapTypeControl: false,
-                    scaleControl: false,
-                    draggable: draggable,
-                    styles: style,
-                    center: new google.maps.LatLng(latitude, longitude),
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                });
+            
             }
 
             var infowindow = new google.maps.InfoWindow();
