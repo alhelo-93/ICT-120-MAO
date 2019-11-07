@@ -44,16 +44,16 @@ function cache() {
 // for edit
 function btnedit() {
     cmdedit.classList.remove("d-none")
-    del.classList.add("tab")
-    btp.classList.add("tab")
+    cmddel.classList.add("tab")
+    updatebtn.classList.add("tab")
     cmdrest.classList.remove("d-none")
 
 }
 // back from edit
  function retour() {
      cmdedit.classList.add("d-none")
-     del.classList.remove("tab")
-     btp.classList.remove("tab")
+     cmddel.classList.remove("tab")
+     updatebtn.classList.remove("tab")
      cmdrest.classList.add("d-none")
  }
 
