@@ -1,23 +1,60 @@
 // MArwan alhelo
 // site de voayge
 // 03.11.19
+
+
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-    btp.addEventListener("click", cache);
+
+    btp.addEventListener("click", montre);
+    btp.addEventListener("click", affichetable);
+    addEventListener("load",cache);
     cmdSave.addEventListener("click", adduser);
-    cmdback.addEventListener("click", montre);
-    del.addEventListener("click",myDelete)
+    cmdback.addEventListener("click", cache);
+    del.addEventListener("click", myDelete)
+// bouton por edite
+    updatebtn.addEventListener("click", btnedit)
+    cmdedit.addEventListener("click", edite)
+    cmdrest.addEventListener("click", retour)
+// bouton de sauvtage
+    cmdstor.addEventListener("click",cmdstore)
+
+}
+
+function affichetable(){
+
+    tableadd.classList.remove("tab");
+}
+function  montre () {
+
+    del.disabled= true
+    updatebtn.disabled= true
 }
 
 function cache() {
-    table.classList.remove("tab");
-}
+    tableadd.classList.add("tab");
+    del.disabled= false
+    updatebtn.disabled= false
 
-function montre() {
-    table.classList.add("tab");
 }
+// for edit
+function btnedit() {
+    cmdedit.classList.remove("d-none")
+    del.classList.add("tab")
+    btp.classList.add("tab")
+    cmdrest.classList.remove("d-none")
 
+}
+// back from edit
+ function retour() {
+     cmdedit.classList.add("d-none")
+     del.classList.remove("tab")
+     btp.classList.remove("tab")
+     cmdrest.classList.add("d-none")
+ }
+
+// add user
 
 function adduser() {
     tr = document.createElement('tr')
@@ -68,48 +105,63 @@ function adduser() {
     tr.appendChild(checkbox)
 
     tblBody.appendChild(tr)
-    alert("votre mwssage est bien ajouté ")
+    alert("votre utlisateur est bien ajouté ")
+}
+// transfer table to selectable
+function edite() {
+    table = tblBody.childern
+    for(nbline = 0; nbline< tblBody.children.length; nbline++)
+    {
+        row = tblBody.children[nbline]
+
+      for(nbcol = 0; nbcol< row.children.length; nbcol++)
+      {
+            cell = row.children[nbcol]
+          inp= document.createElement('input')
+          inp.type ='text'
+          inp.value = cell.innerText;
+          cell.innerText = ''
+
+          cell.appendChild(inp)
+      }
+        cmdedit.classList.add('d-none')
+        cmdstor.classList.remove('d-none')
+    }
+}
+// save date
+function cmdstore() {
+    table = tblBody.childern
+    for (nbline = 0; nbline < tblBody.children.length; nbline++) {
+        row = tblBody.children[nbline]
+
+        for (nbcol = 0; nbcol < row.children.length; nbcol++) {
+            cell = row.children[nbcol]
+            cell.innerText = cell.firstChild.value
+
+        }
+        cmdedit.classList.remove('d-none')
+        cmdstor.classList.add('d-none')
+    }
 }
 
 function validation() {
 
-   if(txtNum0.value <=0 ) {
-       alert('non')
-       cmdSave.disable= true;
+    if (txtNum0.value <= 0) {
+        alert('non')
+        cmdSave.disable = true;
 
-   }
+    }
 
 
 }
 
 
 function myDelete() {
-        if(chbx.checked == true){
-            tr.classList.add("tab")
+    if (chbx.checked == true) {
+        tr.classList.add("tab")
 
-        }
-
-
+    }
 
 }
-
-
-// nav bar
-$(document).ready(function () {
-    $(".menu-icon").on("click", function () {
-        $("nav ul").toggleClass("showing");
-    });
-});
-
-// Scrolling Effect
-
-$(window).on("scroll", function () {
-    if ($(window).scrollTop()) {
-        $('nav').addClass('black');
-    } else {
-        $('nav').removeClass('black');
-    }
-})
-
 
 

@@ -12,11 +12,8 @@ function init() {
     chbox1.addEventListener("click", addtext);
     chbox2.addEventListener("click", addtext);
     ex5.addEventListener("click", Destroy);
-
     nm.addEventListener("keyup", initialsation);
     ex7.addEventListener("",steupbtn)
-
-
     nm.addEventListener("keyup",initialisation);
     addEventListener("load",marques);
     btn1.addEventListener("click",action1);

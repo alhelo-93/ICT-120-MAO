@@ -1,3 +1,7 @@
+/* MArwan alhelo
+site de voayge
+03.11.19  */
+
 html, body {
       margin: 0;
       padding: 0;
@@ -133,6 +137,16 @@ nav ul li a {
       height: 32px;
       background:none;
 }
+
+#cmdrest{
+
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 8px;
+padding-right: 8px;
+
+}
+
 .help {
       width:65px;
       height:65px;
@@ -148,6 +162,9 @@ nav ul li a {
 .tab{
        display:none;
  }
+
+
+
 .clickable {
       cursor: pointer;
 }

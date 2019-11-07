@@ -1,3 +1,8 @@
+
+// MArwan alhelo
+// site de voayge
+// 03.11.19
+
 // nav bar
 $(document).ready(function() {
     $(".menu-icon").on("click", function() {
