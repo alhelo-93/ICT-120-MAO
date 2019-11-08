@@ -68,6 +68,7 @@ function btnedit() {
 // add user
 
 function adduser() {
+
     tr = document.createElement('tr')
 
     th = document.createElement('th')
@@ -202,7 +203,7 @@ function valitation () {
     var chmp8= txtNum7.value.length
     var chmp9= txtNum8.value.length
 
-        
+
     if(chmp1 == '' || chmp1 == null && chmp2== '' || chmp2== null){
 
         txtNum1.classList.add('invalid')
