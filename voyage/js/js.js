@@ -18,6 +18,7 @@ function init() {
     updatebtn.addEventListener("click", btnedit)
     cmdedit.addEventListener("click", edite)
     cmdrest.addEventListener("click", retour)
+    cmdrest .removeEventListener("click", edite)
 // bouton de sauvtage
     cmdstor.addEventListener("click",cmdstore)
 
@@ -63,6 +64,7 @@ function btnedit() {
      cmddel.classList.remove("tab")
      updatebtn.classList.remove("tab")
      cmdrest.classList.add("d-none")
+
  }
 
 // add user
