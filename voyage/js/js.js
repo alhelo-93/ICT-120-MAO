@@ -10,7 +10,8 @@ function init() {
     btp.addEventListener("click", montre);
     btp.addEventListener("click", affichetable);
     addEventListener("load",cache);
-    cmdSave.addEventListener("click", adduser);
+    cmdSave.addEventListener("click", valitation);
+
     cmdback.addEventListener("click", cache);
 
 // bouton por edite
@@ -20,12 +21,12 @@ function init() {
 // bouton de sauvtage
     cmdstor.addEventListener("click",cmdstore)
 
-// delete
-    cmddel.addEventListener('click',killLine)
+
+
 
 // initiale
     txtNum1.addEventListener("keyup",initiale);
-    cmdSave.addEventListener("click",valitation )
+
 
 
 
@@ -39,6 +40,7 @@ function  montre () {
 
     cmddel.disabled= true
     updatebtn.disabled= true
+    //cmdSave.classList.add("d-none")
 }
 
 function cache() {
@@ -151,16 +153,7 @@ function cmdstore() {
     }
 }
 
-function validation() {
 
-    if (txtNum0.value <= 0) {
-        alert('non')
-        cmdSave.disable = true;
-
-    }
-
-
-}
 
 
 
@@ -179,11 +172,8 @@ function initiale(){
 
     var x = " ";
     //we meuser length of the name
-
     var long = txtNum1.value.length;
     //find where is the place exactly
-
-
     var espace = txtNum1.value.indexOf(x);
     //now we go slowly to take first letter
     var lettre1 = txtNum1.value.substr(0, 1);
@@ -202,11 +192,26 @@ function initiale(){
 // validation les champs
 
 function valitation () {
-    var chmp1= txtNum1.value.length
-    if(chmp1== 0){
+    var chmp1= txtNum0.value.length
+    var chmp2= txtNum1.value.length
+    var chmp3= txtNum2.value.length
+    var chmp4= txtNum3.value.length
+    var chmp5= txtNum4.value.length
+    var chmp6= txtNum5.value.length
+    var chmp7= txtNum6.value.length
+    var chmp8= txtNum7.value.length
+    var chmp9= txtNum8.value.length
 
-        txtNum1.classList.add("alert-danger")
+        
+    if(chmp1 == '' || chmp1 == null && chmp2== '' || chmp2== null){
+
+        txtNum1.classList.add('invalid')
+       alert("remplissez votre doc")
+
+
+
+    }     else{
+        cmdSave.addEventListener("click", adduser);
 
     }
-
 }
