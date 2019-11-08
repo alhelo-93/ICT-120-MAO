@@ -9,7 +9,7 @@ function init() {
 
     btp.addEventListener("click", montre);
     btp.addEventListener("click", affichetable);
-    addEventListener("load",cache);
+    addEventListener("load", cache);
     cmdSave.addEventListener("click", valitation);
 
     cmdback.addEventListener("click", cache);
@@ -18,38 +18,40 @@ function init() {
     updatebtn.addEventListener("click", btnedit)
     cmdedit.addEventListener("click", edite)
     cmdrest.addEventListener("click", retour)
-    cmdrest .removeEventListener("click", edite)
+    cmdrest.removeEventListener("click", edite)
 // bouton de sauvtage
-    cmdstor.addEventListener("click",cmdstore)
+    cmdstor.addEventListener("click", cmdstore)
 
-
+    // vérfication champs
+    txtNum0.addEventListener('keyup', test)
 
 
 // initiale
-    txtNum1.addEventListener("keyup",initiale);
-
-
+    txtNum1.addEventListener("keyup", initiale);
 
 
 }
 
-function affichetable(){
+function affichetable() {
 
     tableadd.classList.remove("tab");
 }
-function  montre () {
 
-    cmddel.disabled= true
-    updatebtn.disabled= true
+function montre() {
+
+    cmddel.disabled = true
+    updatebtn.disabled = true
+    console.log(maxnumber())
     //cmdSave.classList.add("d-none")
 }
 
 function cache() {
     tableadd.classList.add("tab");
-    cmddel.disabled= false
-    updatebtn.disabled= false
+    cmddel.disabled = false
+    updatebtn.disabled = false
 
 }
+
 // for edit
 function btnedit() {
     cmdedit.classList.remove("d-none")
@@ -58,14 +60,15 @@ function btnedit() {
     cmdrest.classList.remove("d-none")
 
 }
-// back from edit
- function retour() {
-     cmdedit.classList.add("d-none")
-     cmddel.classList.remove("tab")
-     updatebtn.classList.remove("tab")
-     cmdrest.classList.add("d-none")
 
- }
+// back from edit
+function retour() {
+    cmdedit.classList.add("d-none")
+    cmddel.classList.remove("tab")
+    updatebtn.classList.remove("tab")
+    cmdrest.classList.add("d-none")
+
+}
 
 // add user
 
@@ -84,7 +87,7 @@ function adduser() {
     td8 = document.createElement('td')
     td9 = document.createElement('td')
     td10 = document.createElement('td')
-    div= document.createElement('div')
+    div = document.createElement('div')
 
 
     th.innerText = txtNum0.value;
@@ -99,8 +102,7 @@ function adduser() {
     td9.innerText = txtNum9.value;
     div.innerText = "Supprimer";
     div.className = "btn btn-danger"
-    div.addEventListener("click",killLine)
-
+    div.addEventListener("click", killLine)
 
 
     tr.appendChild(th)
@@ -119,30 +121,30 @@ function adduser() {
     tblBody.appendChild(tr)
     alert("votre utlisateur est bien ajouté ")
 }
+
 // transfer table to selectable
 function edite() {
     table = tblBody.childern
-    for(nbline = 0; nbline< tblBody.children.length; nbline++)
-    {
+    for (nbline = 0; nbline < tblBody.children.length; nbline++) {
         row = tblBody.children[nbline]
 
-      for(nbcol = 0; nbcol< row.children.length; nbcol++)
-      {
+        for (nbcol = 0; nbcol < row.children.length; nbcol++) {
             cell = row.children[nbcol]
-          inp= document.createElement('input')
-          inp.type ='text'
-          inp.value = cell.innerText;
-          cell.innerText = ''
+            inp = document.createElement('input')
+            inp.type = 'text'
+            inp.value = cell.innerText;
+            cell.innerText = ''
 
-          cell.appendChild(inp)
-      }
+            cell.appendChild(inp)
+        }
         cmdedit.classList.add('d-none')
         cmdstor.classList.remove('d-none')
     }
 }
+
 // save date
 function cmdstore() {
-    table = tblBody.childern
+    table = tblBody.children
     for (nbline = 0; nbline < tblBody.children.length; nbline++) {
         row = tblBody.children[nbline]
 
@@ -157,21 +159,18 @@ function cmdstore() {
 }
 
 
-
-
-
 // Cette fonction est appelée au click sur un élément
 
 function killLine(event) // Le paramètre event représente l'événement qui a causé l'appel à la fonction
 {
-    input= event.target   // La cible ('target') de l'événement est le bouton (un élément du DOM)
+    input = event.target   // La cible ('target') de l'événement est le bouton (un élément du DOM)
     td = input.parentNode  // td est la cellule dans laquelle le bouton se trouve
     tr = td.parentNode      // tr est la ligne ('row') dans laquelle la cellule se trouve
     table = tr.parentNode   // table est la table dans laquelle la ligne se trouve
     table.removeChild(tr)   // On enlève la ligne de la table
 }
 
-function initiale(){
+function initiale() {
 
     var x = " ";
     //we meuser length of the name
@@ -194,27 +193,32 @@ function initiale(){
 
 // validation les champs
 
-function valitation () {
-    var chmp1= txtNum0.value.length
-    var chmp2= txtNum1.value.length
-    var chmp3= txtNum2.value.length
-    var chmp4= txtNum3.value.length
-    var chmp5= txtNum4.value.length
-    var chmp6= txtNum5.value.length
-    var chmp7= txtNum6.value.length
-    var chmp8= txtNum7.value.length
-    var chmp9= txtNum8.value.length
+function valitation() {
+    var chmp1 = txtNum0.value.length
+    var chmp2 = txtNum1.value.length
+    var chmp3 = txtNum2.value.length
+    var chmp4 = txtNum3.value.length
+    var chmp5 = txtNum4.value.length
+    var chmp6 = txtNum5.value.length
+    var chmp7 = txtNum6.value.length
+    var chmp8 = txtNum7.value.length
+    var chmp9 = txtNum8.value.length
 
 
-    if(chmp1 == '' || chmp1 == null && chmp2== '' || chmp2== null){
+    if (chmp1 == '' || chmp1 == null && chmp2 == '' || chmp2 == null) {
 
         txtNum1.classList.add('invalid')
-       alert("remplissez votre doc")
+        alert("remplissez votre doc")
 
 
-
-    }     else{
+    } else {
         cmdSave.addEventListener("click", adduser);
 
+    }
+}
+
+function test() {
+    if (txtNum0.value == '') {
+        txtNum0.value = 1
     }
 }
