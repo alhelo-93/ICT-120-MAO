@@ -7,27 +7,27 @@ document.addEventListener("DOMContentLoaded", init);
 
 function init() {
 
-    btp.addEventListener("click", montre);
-    btp.addEventListener("click", affichetable);
-    addEventListener("load", cache);
-    cmdSave.addEventListener("click", valitation);
+    btnadduser.addEventListener("click", montre);
+    btnadduser.addEventListener("click", affichetable);
 
+    addEventListener("load", cache);
+
+    cmdSave.addEventListener("click", valitation);
     cmdback.addEventListener("click", cache);
 
-// bouton por edite
-    updatebtn.addEventListener("click", btnedit)
-    cmdedit.addEventListener("click", edite)
-    cmdrest.addEventListener("click", retour)
-    cmdrest.removeEventListener("click", edite)
-// bouton de sauvtage
-    cmdstor.addEventListener("click", cmdstore)
+    btnupdate.addEventListener("click", btnedit);// bouton por edite
+    cmdedit.addEventListener("click", edite);
 
-    // vérfication champs
-    txtNum0.addEventListener('keyup', test)
+    cmdrest.addEventListener("click", retour);
+    cmdrest.removeEventListener("click", edite);
 
 
-// initiale
-    txtNum1.addEventListener("keyup", initiale);
+    cmdstor.addEventListener("click", cmdstore);// bouton de sauvtage
+
+    Numid.addEventListener('keyup', test)// vérfication champs
+    Numage.addEventListener('keyup', test1)
+
+    txtNom.addEventListener("keyup", initiale);// initiale
 
 
 }
@@ -39,36 +39,34 @@ function affichetable() {
 
 function montre() {
 
-    cmddel.disabled = true
-    updatebtn.disabled = true
-    console.log(maxnumber())
+    btnupdate.classList.add("tab")
+
     //cmdSave.classList.add("d-none")
 }
 
 function cache() {
+    // class on css to hide
     tableadd.classList.add("tab");
-    cmddel.disabled = false
-    updatebtn.disabled = false
+    btnupdate.classList.remove("tab")
 
 }
 
-// for edit
+// for edit manipulate
 function btnedit() {
     cmdedit.classList.remove("d-none")
-    cmddel.classList.add("tab")
-    updatebtn.classList.add("tab")
+    btnadduser.classList.add("tab")
     cmdrest.classList.remove("d-none")
 
 }
 
 // back from edit
 function retour() {
+    btnadduser.classList.remove("tab")
     cmdedit.classList.add("d-none")
-    cmddel.classList.remove("tab")
-    updatebtn.classList.remove("tab")
+    btnupdate.classList.remove("tab")
     cmdrest.classList.add("d-none")
-
 }
+
 
 // add user
 
@@ -90,16 +88,17 @@ function adduser() {
     div = document.createElement('div')
 
 
-    th.innerText = txtNum0.value;
-    td1.innerText = txtNum1.value;
-    td2.innerText = txtNum2.value;
-    td3.innerText = txtNum3.value;
-    td4.innerText = txtNum4.value;
-    td5.innerText = txtNum5.value;
-    td6.innerText = txtNum6.value;
-    td7.innerText = txtNum7.value;
-    td8.innerText = txtNum8.value;
-    td9.innerText = txtNum9.value;
+    th.innerText = Numid.value;
+    td1.innerText = txtNom.value;
+    td2.innerText = Numage.value;
+    td3.innerText = txtclasse.value;
+    td4.innerText = selectoption.value;
+    td5.innerText = Numphone.value;
+    td6.innerText = txtadresse.value;
+    td7.innerText = txtnatioalie.value;
+
+    td8.innerText = txtrole.value;
+    td9.innerText = txtinitial.value;
     div.innerText = "Supprimer";
     div.className = "btn btn-danger"
     div.addEventListener("click", killLine)
@@ -137,12 +136,16 @@ function edite() {
 
             cell.appendChild(inp)
         }
-        cmdedit.classList.add('d-none')
-        cmdstor.classList.remove('d-none')
+        cmdedit.classList.add('d-none');
+        cmdstor.classList.remove('d-none');
+        cmdrest.classList.add('d-none');
+
+
+
     }
 }
 
-// save date
+// save update
 function cmdstore() {
     table = tblBody.children
     for (nbline = 0; nbline < tblBody.children.length; nbline++) {
@@ -153,8 +156,13 @@ function cmdstore() {
             cell.innerText = cell.firstChild.value
 
         }
-        cmdedit.classList.remove('d-none')
-        cmdstor.classList.add('d-none')
+
+        cmdedit.classList.remove('d-none');
+        cmdstor.classList.add('d-none');
+        cmdrest.classList.remove('d-none');
+
+
+
     }
 }
 
@@ -174,40 +182,33 @@ function initiale() {
 
     var x = " ";
     //we meuser length of the name
-    var long = txtNum1.value.length;
+    var long = txtNom.value.length;
     //find where is the place exactly
-    var espace = txtNum1.value.indexOf(x);
+    var espace = txtNom.value.indexOf(x);
     //now we go slowly to take first letter
-    var lettre1 = txtNum1.value.substr(0, 1);
+    var lettre1 = txtNom.value.substr(0, 1);
     // find space between name and last name
-    var lettre2 = txtNum1.value.substr(espace + 1, 1);
+    var lettre2 = txtNom.value.substr(espace + 1, 1);
     // take last letter
-    var lettre3 = txtNum1.value.substr(long - 1, 1);
+    var lettre3 = txtNom.value.substr(long - 1, 1);
     // concatenate together to make initialisation
     var resultat = lettre1 + lettre2 + lettre3;
     // all to upper case
     var upcase = resultat.toUpperCase();
     // put the value in the second box
-    txtNum9.value = upcase;
+    txtinitial.value = upcase;
 }
 
 // validation les champs
 
 function valitation() {
-    var chmp1 = txtNum0.value.length
-    var chmp2 = txtNum1.value.length
-    var chmp3 = txtNum2.value.length
-    var chmp4 = txtNum3.value.length
-    var chmp5 = txtNum4.value.length
-    var chmp6 = txtNum5.value.length
-    var chmp7 = txtNum6.value.length
-    var chmp8 = txtNum7.value.length
-    var chmp9 = txtNum8.value.length
+    var chmp1 = Numid.value.length
+    var chmp2 = txtNom.value.length
 
 
     if (chmp1 == '' || chmp1 == null && chmp2 == '' || chmp2 == null) {
 
-        txtNum1.classList.add('invalid')
+        txtNom.classList.add('invalid')
         alert("remplissez votre doc")
 
 
@@ -218,7 +219,13 @@ function valitation() {
 }
 
 function test() {
-    if (txtNum0.value == '') {
-        txtNum0.value = 1
+    if (Nomid.value == '') {
+        Nomid.value = 1
+    }
+}
+function test1() {
+
+    if(Nomid.value == ''){
+        Numage.value = 15
     }
 }

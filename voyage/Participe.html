@@ -53,137 +53,97 @@
         </nav>
 
     </header>
+</div>
+<br>
+<button class="help"><a href="Contact/index.html" style="color: azure">content/e?</a></button>
+<div id="btnpostion">
+    <h1>Participants</h1>
     <br>
-    <button class="help"><a href="Contact/index.html" style="color: azure">content/e?</a></button>
-    <div id="btnpostion">
-        <h1>Participants</h1>
-        <br>
 
-        <button id="btp" type="button" class="btn-outline-dark btn-sm"> Add USER <img id="logo"
-                                                                                      src="icon/create-group-button.png">
-        </button>
-        <button id="cmddel" type="button" class="btn-outline-dark btn-sm"> Delete USER <img id="Dlogo"
-                                                                                            src="icon/user.png">
-        </button>
-        <button id="updatebtn" type="button" class="btn-outline-dark btn-sm">Update USER <img id="Uplogo"
-                                                                                              src="icon/refresh.png">
-        </button>
+    <button id="btnadduser" type="button" class="btn-outline-dark btn-sm"> Ajeter utilsateur <img id="logo"
+                                                                                                  src="icon/create-group-button.png">
+    </button>
 
-        <button id="cmdrest" type="button" class="btn-outline-dark btn-m d-none">retour
-        </button>
-        <br>
-        <br>
-
-        <div id="tableadd">
-            <table class="table table-hover table-bordered table-dark table-sm">
-                <thead>
-                <tr>
-                    <th scope="col">N°</th>
-                    <th scope="col">Nom Et prénom</th>
-                    <th scope="col">Age</th>
-                    <th scope="col">Classe</th>
-                    <th scope="col">Gender</th>
-                    <th scope="col">N°téléphone</th>
-                    <th scope="col">Adress</th>
-                    <th scope="col">Nationalité</th>
-                    <th scope="col">Role</th>
-                    <th scope="col">Initiale</th>
-
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row"><input type="number" id="txtNum0" placeholder="numéro" min="1"></th>
-                    <td><input type="text"  id="txtNum1" placeholder="votre nom complet" ></td>
-                    <td><input type="number"id="txtNum2" placeholder="votre age " min="15" ></td>
-                    <td><input type="text"  id="txtNum3" placeholder="votre Classe"></td>
-                    <td><select id="txtNum4" >
-                        <option value="">Select votre Civilté</option>
-                        <option value="Madame">Madame</option>
-                        <option value="Monsieur">Monsieur</option>
-                    </select></td>
-                    <td><input type="text"  id="txtNum5" placeholder="votre téléphone" ></td>
-                    <td><input type="text"  id="txtNum6" placeholder="votre adress" ></td>
-                    <td><input type="text"  id="txtNum7" placeholder="votre nationalité" ></td>
-                    <td><input type="text"  id="txtNum8" placeholder="votre role" ></td>
-                    <td><input type="text"  id="txtNum9" placeholder="votre initial"></td>
-                </tr>
-                </tbody>
-            </table>
-            <div class="btn btn-success" id="cmdSave">Sauver</div>
-            <div class="btn btn-success" id="cmdback">retour</div>
-        </div>
-
-    </div>
+    <button id="btnupdate" type="button" class="btn-outline-dark btn-sm">Edite utilsateur <img id="Uplogo"
+                                                                                               src="icon/refresh.png">
+    </button>
     <br>
-    <div id="tablefix">
+    <br>
+    <!-- bouton ls table à ajeter -->
+    <div id="tableadd">
+        <div class="btn btn-success" id="cmdSave">Add</div>
+        <div class="btn btn-success" id="cmdback">Retour</div>
+        <br>
+        <br>
         <table class="table table-hover table-bordered table-dark table-sm">
             <thead>
             <tr>
                 <th scope="col">N°</th>
-                <th scope="col">Nom</th>
+                <th scope="col">Nom Et prénom</th>
                 <th scope="col">Age</th>
                 <th scope="col">Classe</th>
                 <th scope="col">Gender</th>
                 <th scope="col">N°téléphone</th>
                 <th scope="col">Adress</th>
                 <th scope="col">Nationalité</th>
-                <th scope="col">role</th>
-                <th scope="col">initiale</th>
+                <th scope="col">Role</th>
+                <th scope="col">Initiale</th>
 
             </tr>
             </thead>
-            <tbody id="tblBody" class="clickable ">
+            <tbody>
             <tr>
-                <th scope="row">1</th>
-                <td class="clickable " id="trtr">Larry Bird</td>
-                <td>26</td>
-                <td> b</td>
-                <td>m</td>
-                <td>0754000098</td>
-                <td>av.here</td>
-                <td> SWI</td>
-                <td> boss</td>
-                <td> LBD</td>
+                <!-- les champs pour utlisateur à ajeter  -->
 
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Larry Bird</td>
-                <td>26</td>
-                <td> b</td>
-                <td>m</td>
-                <td>0754000098</td>
-                <td>av.here</td>
-                <td> SWI</td>
-                <td> boss</td>
-                <td> LBD</td>
-
-            </tr>
-            <tr>
-                <th scope="row">5</th>
-                <td>Larry Bird</td>
-                <td>26</td>
-                <td> b</td>
-                <td>m</td>
-                <td>0754000098</td>
-                <td>av.here</td>
-                <td> SWI</td>
-                <td> boss</td>
-                <td> LBD</td>
-
+                <th scope="row"><input type="number" id="Numid" placeholder="numéro" min="1"></th>
+                <td><input type="text" id="txtNom" placeholder="votre nom complet"></td>
+                <td><input type="number" id="Numage" placeholder="votre age " min="15"></td>
+                <td><input type="text" id="txtclasse" placeholder="votre Classe"></td>
+                <td><select id="selectoption">
+                    <option value="">Select votre Civilté</option>
+                    <option value="Madame">Madame</option>
+                    <option value="Monsieur">Monsieur</option>
+                </select></td>
+                <td><input type="text" id="Numphone" placeholder="votre téléphone"></td>
+                <td><input type="text" id="txtadresse" placeholder="votre adress"></td>
+                <td><input type="text" id="txtnatioalie" placeholder="votre nationalité"></td>
+                <td><input type="text" id="txtrole" placeholder="votre role"></td>
+                <td><input type="text" id="txtinitial" placeholder="votre initial"></td>
             </tr>
             </tbody>
         </table>
-    </div>
 
+    </div>
 </div>
+
 <div id="btnedit">
     <div class="btn btn-primary d-none" id="cmdedit">Edite</div>
     <div class="btn btn-success d-none" id="cmdstor">Sauver</div>
+    <div class="btn btn-success d-none" id="cmdrest">Retour</div>
 </div>
+<br>
+<br>
+<div id="tablefix">
+    <table class="table table-hover table-bordered table-dark table-sm">
+        <thead>
+        <tr>
+            <th scope="col">N°</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Age</th>
+            <th scope="col">Classe</th>
+            <th scope="col">Gender</th>
+            <th scope="col">N°téléphone</th>
+            <th scope="col">Adress</th>
+            <th scope="col">Nationalité</th>
+            <th scope="col">role</th>
+            <th scope="col">initiale</th>
 
+        </tr>
+        </thead>
+        <tbody id="tblBody" class="clickable ">
+
+        </tbody>
+    </table>
 </div>
 </body>
-
 </html>
