@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Inscription</title>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css"/>
+    <script src="JS/main.js"> </script>
 </head>
 <body>
     <h2>Inscription au tchoukball club Ste-Croix</h2>
-    <form action="motivation.html">
-        <label>Prénom</label><input type="text" name="txtFirstName"><div>Invalide: trop court</div>
-        <label>Nom</label><input type="text" name="txtLastName"><div>Invalide: trop court</div>
-        <label>Mot de passe</label><input type="password"><div>Invalide: minimum 6 caractères</div>
-        <label>Confirmation</label><input type="password"><div>Invalide: différent</div>
-        <input type="submit" value="Envoyer">
+    <form action="motivation.html" id="formfiled">
+        <label>Prénom</label><input id="nameu" type="text" name="txtFirstName"><div id="invalidname">Invalide: trop court</div>
+        <label>Nom</label><input id="lastnameu" type="text" name="txtLastName"><div id="invalidlastname">Invalide: trop court</div>
+        <label>Mot de passe</label><input id="pswu" type="password"><div id="invalidpsw">Invalide: minimum 6 caractères</div>
+        <label>Confirmation</label><input id="pswconfiremu" type="password"><div id="invalidematch">Invalide: différent</div>
+        <input id="ptnsend" type="submit" value="Envoyer">
     </form>
 </body>
 </html>
