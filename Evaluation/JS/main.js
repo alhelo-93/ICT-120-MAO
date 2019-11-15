@@ -73,4 +73,3 @@ function checkmatch(){
          ptnsend.disabled= false
      }
  }
- 
