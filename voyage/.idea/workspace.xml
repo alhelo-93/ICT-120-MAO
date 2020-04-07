@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2bfbecc-1c5a-4873-a78d-21ced34eb8e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../DOC/Documentation de projet.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../DOC/Documentation de projet.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOC/Maquette PDF/Maquettes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../DOC/Maquette PDF/Maquettes.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOC/Maquette PNG/Add new member (02).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOC/Maquette PNG/Afficher (08)  .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOC/Maquette PNG/Cacher(09) .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOC/Maquette PNG/Delete a Membre (06).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOC/Maquette PNG/Edit new member (04).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOC/Maquette PNG/Edit new member (05) .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOC/Maquette PNG/Membre of liste (01).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOC/Maquette PNG/Membre of liste (07) .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOC/Maquette PNG/Message d'erreur  (03) .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOC/Maquette PNG/Page Home (0).png" beforeDir="false" afterPath="$PROJECT_DIR$/../DOC/Maquette PNG/Page Home (0).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOC/Maquette PNG/Zoning.png" beforeDir="false" afterPath="$PROJECT_DIR$/../DOC/Maquette PNG/Zoning.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOC/Zoning.Marwanalhelo.bmpr" beforeDir="false" afterPath="$PROJECT_DIR$/../DOC/Zoning.Marwanalhelo.bmpr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Participe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Participe.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +36,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ICT-120-JVA/projet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ICT-133" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -96,7 +81,11 @@
       <workItem from="1572872430650" duration="7679000" />
       <workItem from="1572889728873" duration="54131000" />
       <workItem from="1573303514380" duration="23000" />
-      <workItem from="1573310780715" duration="240000" />
+      <workItem from="1573310780715" duration="848000" />
+      <workItem from="1573339957930" duration="606000" />
+      <workItem from="1573391714159" duration="654000" />
+      <workItem from="1573430165914" duration="64000" />
+      <workItem from="1575147929743" duration="84000" />
     </task>
     <servers />
   </component>
